@@ -1,0 +1,57 @@
+Ejercicio 6 UT1_PD5
+
+substring(int indiceComienzo) = Este método devuelve un substring comenzando en el índice pasado por parámetro, hasta el final del string.
+
+substring(int indiceComienzo, int indiceFinal) =  este método devuelve un substring desde el primer índice(incluyente, imprime el primer índice)pasado por parámetro, hasta el segundo índice(excluyente, esto se refiere a qué va a imprimir hasta el valor anterior al segundo índice) pasado por parámetro.
+
+split(String delimiter) = divide el String en base a el delimitador que le pasado por parámetro, devuelve un Array de strings con las partes del string separadas en base a ese delimitador.
+
+split(String delimiter, int limit) = permite especificar un límite de substrings que se van a devolver en el array después de dividir el string original.
+El segundo parámetro, es un entero que va a especificar el número máximo de substrings que se van a devolver en el array original.
+Si limit es 0, entonces el método va a funcionar de la misma manera que el split convencional.
+Si limit es negativo, el método va a funciona casi de la misma manera que el split convencional, con la diferencia que va a devolver el array sin strings vacías.
+
+
+subSequence(int firstPosition, int lastPosition) = te devuelve una subsequencia del String original(devuelve un objeto de tipo CharSequence, que es la interfaz que representa una secuencia de caractéres) desde el primer índice(incluyente) hasta el último índice(excluyente), si no le envías el último índice por parámetro, va a devolver una secuencia de caractéres desde el primer índice hasta el final del array.
+
+trim() = quita los espacios en blanco al principio y al final del string, devuelve un nuevo string sin los espacios en blanco al principio y al final. 
+
+toLowerCase() = convierte todos los caracactéres alfabéticos en un string a letras minúsculas, si el string tiene caractéres numéricos, estos no se verán afectados.
+
+toUpperCase() = convierte todos los caracactéres alfabéticos en un string a letras mayúsculas, si el string tiene caractéres numéricos, estos no se verán afectados.
+
+indexOf(int ch) = Busca la primera ocurrencia del caractér pasado por parámetro y devuelve el índice de esa ocurrencia, si no existe esa ocurrencia devuelve -1.
+
+indexOf(int ch, int fromIndex) = similar al método anterior pero empieza a buscar la primera ocurrencia a partir del índice pasado por parámetro, si no existe devuelve -1.
+
+indexOf(String str) = busca la primera ocurrencia del string pasado por parámetro, si no existe devuelve -1.
+
+indexOf(String str, int fromIndex) = Similar al método anterior, pero empieza a buscar la primera ocurrencia desde el índice pasado por parámetro, si no existe devuelve -1.
+
+//lastIndexOf, similar a todas las versiónes de indexOf solo que busca la última ocurrencia en el array
+
+lastIndexOf(int char) 
+
+lastIndexOf(int ch, int fromIndex)
+
+lastIndexOf(String str)
+
+lastIndexOf(String str, int fromIndex) 
+
+
+contains = verifica si una string contiene un substring específico, devuelve true si lo contiene y false en caso contrario
+
+
+replace(char oldChar, char newChar) = reemplaza todas las ocurrencias del primer caractér pasado por parámetro, por el último caracter pasado por parámetro.
+
+replace(CharSequence target, CharSequence replacement) = reemplaza todas las ocurrencias de la primer secuencia de caractéres pasados por parámetro, por la última secuencia de caractéres pasadas por parámetro.
+
+
+replaceAll(String regex, String replacement) = reemplaza todas las ocurrencias del string pasado por parámetro, por las del último string pasado por parámetro.
+
+
+replaceAll(String regex, Function<MatchResult, String> replacer) = reemplaza todas las ocurrencias del primer string envíado por parámetro, en relación a la segunda función enviada por parámetro, este método utiliza la lógica proporcionada por la función replacer.
+Esta función toma un objeto MatchResult como argumento y devuelve un string reemplazando cada coincidencia.
+
+replaceFirst(String regex, String replacement) = Reemplaza solo la primera ocurrencia en el string de el primer elemento pasado por parámetro, por la de el último elemento pasado por parámetro.
+
