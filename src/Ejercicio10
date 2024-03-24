@@ -1,0 +1,12 @@
+public class Ejercicio10 {
+    public static void main(String[] args) {
+        String question = "Was it a car or a cat I saw";
+        System.out.println(question.substring(9, 12));
+        System.out.println(question.substring(9, 12).length());
+        //A) ¿Cuán larga es las string devuelta por la siguiente expresión?  el String devuelto tiene longitud 3.
+        //B)  ¿cuál es la string?  = car
+
+
+    }
+
+}
