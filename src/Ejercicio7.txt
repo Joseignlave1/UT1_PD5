@@ -1,0 +1,29 @@
+Ejercicio 7 UT1_PD5
+
+//Característica principal de las StringBuilders = son como Strings pero son MUTABLES, se las puede modificar, agregar y borrar cosas
+
+Constructores:
+
+StringBuilder() = crea un StringBuilder vacío con una capacidad inicial de 16 elementos.
+
+StringBuilder(CharSequence cs) = crea un StringBuilder con los caractéres que contiene la CharSequence cs + 16 caractéres adiccionales como espacio adiccional para futuras operaciones de concatenación.
+
+StringBuilder(int initCapacity) = se inicializa un StringBuilder vacío con la capacidad inicial específicada por parámetro
+
+StringBuilder(String s) = se inicializa un StringBuilder con con los caractéres que contiene el String s + 16 caractéres adiccionales como espacio adiccional para futuras operaciones de concatenación.
+
+setLength(int newLength) = Establece la nueva longitud del StringBuilder, si la longitud es menor que la longitud actual, se eliminan los caractéres en exceso, si es mayor, se agregan caractéres núlos, para alcanzar la nueva longitud.
+
+ensureCapacity(int minimumCapacity) = se utiliza para garantizar que la capacidad del StringBuilder sea al menos igual a la cantidad pasada por parámetro, si es menor, entonces se ajustará la capacidad de el StringBuilder para que sea igual o mayor que la capacidad pasada por parámetro, si la capacidad actual del StringBuilder es mayor o igual que minimumCapacity, entonces no se realizará ningún cambio.
+
+ 
+append = agrega elementos al StrinBuilder
+
+insert(int offset, String str) = agrego un elemento al StringBuilder, el primer parámetro es la posición en la que quiero agregar el elemento, mientras que el último parámetro es el elemento que quiero agregar
+
+delete(int start, int end) = borra una porción del StringBuilder, desde el índice start(incluyente) hasta el índice end(excluyente) ya qué end se refiere al índice del primer caractér el cúal no va a ser eliminado.
+
+deleteCharAt(int index) = se utiliza para eliminar un caractér del StringBuilder en la posición específica pasada por parámetro.
+
+
+reverse() = se utiliza para invertir el contenido en un StringBuilder.
